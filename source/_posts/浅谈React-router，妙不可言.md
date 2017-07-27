@@ -6,12 +6,9 @@ tags:
 
 ### React-Router 
 
+### 第一节 概要
 
-##React-router
-
-###第一节 概要
-
-#####前言
+##### 前言
 [Githup链接](https://github.com/ReactTraining/react-router)
 [代码事例](https://reacttraining.com/)
 
@@ -27,7 +24,7 @@ tags:
 
 *这是因为react-router 采用lerna管理，多个包一套代码*
 
-####WEB
+#### WEB
 ```
 npm install react-router-dom
 # or
@@ -56,7 +53,7 @@ import Route from 'react-router-dom/Route'
 // etc.
 `
 
-####Native
+#### Native
 
 我们为React-router的原生能力编写了大量文档，推荐阅读此[文档]()
 
@@ -80,7 +77,7 @@ import {
 
 ```
 
-####不指定环境
+#### 不指定环境
 
 ```
 yarn add react-router
@@ -102,7 +99,7 @@ import {
 集成这个用法到你的项目中去。
 
 
-###第二节 应用更新阻塞
+### 第二节 应用更新阻塞
 
 #####前言
  >React-router有一些位置感知的组件，它们基于location对象决定渲染结果
@@ -110,7 +107,7 @@ import {
  >隐式传递的。当location对象发生变化时候，这些组件会从上下文模型中更新location
  >对象，重新渲染。
  
-######如下是针对上面问题的例子
+###### 如下是针对上面问题的例子
 
 我们先来分析这个不能自动更新的组件
 
@@ -148,7 +145,7 @@ class UpdateBlocker extends React.PureComponent {
 </UpdateBlocker>
 ```
 
-#####shouldComponentUpdate
+##### shouldComponentUpdate
 当路径发生变化，为了让一个组件知道更新去运行 shouldComponentUpdate方法。可以让
 shouldComponentUpdate方法具有判断位置变化的能力。
 
